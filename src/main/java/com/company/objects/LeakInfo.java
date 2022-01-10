@@ -17,13 +17,15 @@ public class LeakInfo {
     // Просмотры
     private int views;
     // Первый релиз
-    private String firstRelease;
+    private Date firstRelease;
     // Последний релиз
-    private String lastUpdate;
+    private Date lastUpdate;
     // Рейтинг
-    private double rating;
+    private String rating;
     // Сайт с которого бралась информация
     private String siteUrl;
+    // ID ресурса
+    private String resourceID;
 
 
     public void toStringObject() {
@@ -105,27 +107,27 @@ public class LeakInfo {
         this.views = views;
     }
 
-    public String getFirstRelease() {
+    public Date getFirstRelease() {
         return firstRelease;
     }
 
-    public void setFirstRelease(String firstRelease) {
+    public void setFirstRelease(Date firstRelease) {
         this.firstRelease = firstRelease;
     }
 
-    public String getLastUpdate() {
+    public Date getLastUpdate() {
         return lastUpdate;
     }
 
-    public void setLastUpdate(String lastUpdate) {
+    public void setLastUpdate(Date lastUpdate) {
         this.lastUpdate = lastUpdate;
     }
 
-    public double getRating() {
+    public String getRating() {
         return rating;
     }
 
-    public void setRating(double rating) {
+    public void setRating(String rating) {
         this.rating = rating;
     }
 
@@ -137,4 +139,11 @@ public class LeakInfo {
         this.siteUrl = siteUrl;
     }
 
+    public String getResourceID() {
+        return resourceID;
+    }
+
+    public void setResourceID(String resourceID) {
+        this.resourceID = resourceID;
+    }
 }
